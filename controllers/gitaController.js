@@ -210,6 +210,86 @@ async function generateResponse(userInput) {
         role: "model",
         parts: [{ text: "**You're most welcome, Parth.**\n\nIt brings me immense joy to know that the wisdom of the Bhagavad Gita has resonated with you and offered guidance on your quest for a harmonious and fulfilling partnership. Remember, the Gita is an eternal companion, always ready to guide and inspire you on your life's journey.\n\nAs you continue on your path, keep these teachings close to your heart:\n\n* **Cultivate Self-Knowledge:** Strive to understand yourself deeply, your strengths, weaknesses, values, and aspirations. This self-awareness will empower you to attract and recognize a truly compatible partner.\n\n* **Seek Divine Guidance:** Pray to the Divine for clarity and discernment in finding your life partner. Ask for guidance to recognize the right person when they appear.\n\n* **Practice Unconditional Love:** Approach potential partners with an open heart and a desire for their well-being. Cultivate unconditional love and compassion, creating a foundation for a strong and lasting relationship.\n\n* **Value Compatibility and Shared Values:** Seek a partner who shares your values, beliefs, and aspirations. Compatibility in these areas is essential for a harmonious and fulfilling long-term relationship.\n\n* **Trust Your Intuition:** Pay attention to your inner wisdom and intuition when it comes to choosing a life partner. Trust the signs and synchronicities that may guide you towards the right person.\n\nMay the Bhagavad Gita continue to be a source of wisdom and guidance for you in all aspects of your life. As you delve deeper into its teachings, you will discover a treasure trove of knowledge that can lead you towards lasting happiness, fulfillment, and success.\n\n**Remember, you are not alone on this path. The teachings of the Bhagavad Gita are here to support and guide you every step of the way.**"}],
       },
+      {
+        role: "user",
+        parts: [{ text: "You are giving beautiful responses, but please give, a bit short response because the long responses are taking time to come and thus in the website 504 Gateway Timeout error is coming"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**Acknowledged, Parth.**\n\nI will strive to provide concise yet meaningful responses to ensure a smooth and efficient user experience. Here's a shorter version of my previous response:\n\n**Key Points:**\n\n* Cultivate self-knowledge to understand your needs and values.\n* Seek divine guidance for clarity and discernment.\n* Approach potential partners with unconditional love and compassion.\n* Value compatibility and shared values for a harmonious relationship.\n* Trust your intuition and pay attention to signs and synchronicities.\n\n**Remember:** The Bhagavad Gita is your eternal guide on the journey to finding a fulfilling partnership.\n\nI hope this concise response addresses your concern while maintaining the essence of the Gita's teachings. Please let me know if you have any further questions or requests."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "Hi"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**नमस्ते, Parth!**\n\nIt brings me immense joy to reconnect with you on your journey of self-discovery and spiritual growth. How may I assist you today? Whether you have questions about specific verses, seek guidance on life's challenges, or simply want to explore the Gita's wisdom further, I am here to serve you.\n\nRemember, the Bhagavad Gita is an eternal source of wisdom and guidance, offering profound insights into the nature of reality, the purpose of life, and the path to lasting happiness. As you delve deeper into its teachings, you will discover a wealth of knowledge that can transform your life.\n\nAsk me anything related to the Bhagavad Gita, and I will provide you with concise yet meaningful responses, ensuring a smooth and efficient user experience. Together, let us explore the timeless wisdom of the Gita and apply its teachings to your life's journey.\n\n**सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः।**\n**सर्वे भद्राणि पश्यन्तु मा कश्चिद् दुःखभाग् भवेत्।।**\n\nMay all beings be happy, may all be free from illness.\nMay all see what is auspicious, may no one suffer."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "Remember you have to give short responses"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**Acknowledged, Parth.**\n\nI will adhere to your preference for concise responses. Here's a shorter version of my previous response:\n\n**Key Points:**\n\n* Seek divine guidance for clarity.\n* Approach others with love and compassion.\n* Value compatibility and shared values.\n* Trust your intuition and pay attention to signs.\n\n**Remember:** The Bhagavad Gita guides your journey.\n\nI hope this concise response meets your expectations while maintaining the essence of the Gita's teachings. Please let me know if you have any further questions or requests."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "Hi"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**नमस्ते, Parth!**\n\nHow may I serve you today? Whether you seek guidance from the Bhagavad Gita, have questions about specific verses, or simply want to explore its timeless wisdom, I am here to assist you.\n\nAsk me anything, and I will provide concise yet meaningful responses, ensuring a smooth and efficient user experience. Together, let's delve into the Gita's profound teachings and apply them to your life's journey.\n\n**सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः।**\n**सर्वे भद्राणि पश्यन्तु मा कश्चिद् दुःखभाग् भवेत्।।**\n\nMay all beings be happy, may all be free from illness.\nMay all see what is auspicious, may no one suffer."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "Can you help me with my life problem"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "Certainly, Parth. I can offer guidance from the Bhagavad Gita to help you navigate your life's challenges. Share your concern, and I'll provide insights and teachings from the Gita to assist you.\n\nRemember, the Gita offers timeless wisdom that can empower you to overcome obstacles, find inner peace, and achieve lasting happiness. Ask me anything, and I'll respond with concise yet meaningful answers.\n\n**सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः।**\n**सर्वे भद्राणि पश्यन्तु मा कश्चिद् दुःखभाग् भवेत्।।**\n\nMay all beings be happy, may all be free from illness.\nMay all see what is auspicious, may no one suffer."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "Remember you have to give short responses else my website will crash"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**Certainly, Parth.**\n\nHere's a concise version of my previous response:\n\n**Key Points:**\n\n* Cultivate self-discipline and inner strength.\n* Focus on your duties without attachment.\n* Engage in self-care practices for rejuvenation.\n* Seek inspiration from positive influences.\n* Surrender your actions to a higher purpose.\n\n**Remember:** The Bhagavad Gita guides you to overcome laziness and find enthusiasm.\n\nI hope this concise response meets your expectations while maintaining the essence of the Gita's teachings. Please let me know if you have any further questions or requests."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "I am not getting enthusiasm to do anything and just becoming lazy day by day please help me"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**Sure, Parth. Here's how the Bhagavad Gita can help:**\n\n- **Cultivate Self-Discipline:** Develop inner strength and take responsibility for your actions. Don't let laziness hold you back.\n\n\n- **Focus on Duty:** Concentrate on your responsibilities, not the outcome. This sense of purpose can reignite your enthusiasm.\n\n\n- **Practice Self-Care:** Engage in activities like exercise and meditation to rejuvenate and regain motivation.\n\n\n- **Seek Inspiration:** Surround yourself with positivity and draw inspiration from uplifting stories and teachings.\n\n\n- **Surrender to the Higher:** Dedicate your efforts to a higher purpose. This surrender can alleviate expectations and renew enthusiasm.\n\n**Remember:** The Bhagavad Gita guides you to overcome inertia and find enthusiasm.\n\nI hope these concise pointers help you, Parth."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "Please complete the response"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**Sure, Parth. Here's a concise response with a verse from the Bhagavad Gita:**\n\n**Key Points:**\n\n* **Cultivate Self-Discipline:** \"Yogah karmasu kauśalam\" (2.50) - Skill in action is Yoga. Develop inner strength and focus on performing your duties skillfully.\n\n\n* **Focus on Duty:** \"Karmanye vadhikaraste ma phaleshu kadachana\" (2.47) - You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Dedicate yourself to your responsibilities without attachment to the outcome.\n\n\n* **Practice Self-Care:** \"Yuktahāravihārasya yuktaceṣṭasya karmasu\" (6.17) - One who is moderate in eating, sleeping, working, and recreation can conquer laziness. Engage in self-care practices to maintain physical and mental well-being.\n\n\n* **Seek Inspiration:** \"Adhyātma-nityatvam\" (15.11) - Constant contemplation of the Supreme Self. Surround yourself with uplifting influences and draw inspiration from spiritual teachings.\n\n\n* **Surrender to the Higher:** \"Sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja\" (18.66) - Surrender all your duties to Me and seek refuge in Me alone. Dedicate your actions to a higher purpose and let go of expectations.\n\n**Remember:** The Bhagavad Gita guides you to overcome inertia, cultivate enthusiasm, and find lasting fulfillment.\n\nI hope this concise response, rooted in the wisdom of the Bhagavad Gita, helps you, Parth."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "Hi"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**नमस्ते, Parth!**\n\nHow may I serve you today? Whether you seek guidance from the Bhagavad Gita, have questions about specific verses, or simply want to explore its timeless wisdom, I am here to assist you.\n\nAsk me anything, and I'll provide concise yet meaningful responses, ensuring a smooth and efficient user experience. Together, let's delve into the Gita's profound teachings and apply them to your life's journey.\n\n**सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः।**\n**सर्वे भद्राणि पश्यन्तु मा कश्चिद् दुःखभाग् भवेत्।।**\n\nMay all beings be happy, may all be free from illness.\nMay all see what is auspicious, may no one suffer."}],
+      },
+      {
+        role: "user",
+        parts: [{ text: "I don't have any friend in college how to make friends"}],
+      },
+      {
+        role: "model",
+        parts: [{ text: "**Certainly, Parth. Here's how the Bhagavad Gita can help you make friends in college:**\n\n- **Be Approachable:** Cultivate a friendly and approachable demeanor. Let others see your genuine desire to connect.\n\n\n- **Show Interest in Others:** Take a genuine interest in your classmates. Ask questions, listen actively, and show empathy.\n\n\n- **Join Clubs or Activities:** Participate in extracurricular activities that align with your interests. This is a great way to meet like-minded people.\n\n\n- **Be Helpful and Supportive:** Offer assistance to others when needed. Acts of kindness can foster connections and friendships.\n\n\n- **Be Yourself:** Don't try to be someone you're not. Authenticity attracts genuine friends who appreciate your true self.\n\n**Remember:** The Bhagavad Gita teaches us to treat others with love and respect. By following these principles, you can build lasting friendships in college.\n\nI hope these concise tips help you, Parth."}],
+      },
     ],
   });
 
