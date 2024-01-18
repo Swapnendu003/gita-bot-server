@@ -17,12 +17,16 @@ router.post("/generateResponse", async (req, res) => {
     const chunkSize = 512; // Adjust the chunk size as needed
     const responseChunks = responseText.match(new RegExp(`.{1,${chunkSize}}`, 'g'));
 
-    // Send chunks without delay
-    for (const chunk of responseChunks) {
-      res.write(chunk);
+    // Stream chunks with a delay
+    async function streamChunks() {
+      for (const chunk of responseChunks) {
+        res.write(chunk);
+        await new Promise(resolve => setTimeout(resolve, 100)); // Adjust delay as needed
+      }
+      res.end(); // End the response stream after all chunks are sent
     }
 
-    res.end(); // End the response stream
+    streamChunks();
   } catch (error) {
     console.error("Error generating response:", error);
     res.status(500).json({ success: false, error: "Internal Server Error" });
