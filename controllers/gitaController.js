@@ -277,7 +277,15 @@ async function generateResponse(userInput) {
         const contentParts = response.candidates[0].content.parts;
         const textContent = contentParts.map((part) => part.text).join('\n');
         console.log('Generated response:', textContent);
-        return textContent;
+
+        // Split the response into chunks and send them
+        const chunkSize = 512; // Adjust the chunk size as needed
+        const responseChunks = textContent.match(new RegExp(`.{1,${chunkSize}}`, 'g'));
+
+        for (const chunk of responseChunks) {
+          chunkCallback(chunk);
+          await new Promise((resolve) => setTimeout(resolve, 100)); // Adjust delay as needed
+        }
       } else {
         console.error('No candidates in the response');
         throw new Error('Internal Server Error');
@@ -291,5 +299,4 @@ async function generateResponse(userInput) {
     throw error;
   }
 }
-
 module.exports = { generateResponse };
