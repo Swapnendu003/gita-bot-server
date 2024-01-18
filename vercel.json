@@ -6,12 +6,15 @@
       "use": "@vercel/node"
     }
   ],
-  "functions": {
-    "api/generateResponse": {
-      "maxDuration": 30 
-    }
-  },
   "routes": [
+    { "src": "/api/generateResponse", "dest": "/index.js" },
     { "src": "/(.*)", "dest": "/index.js" }
-  ]
+  ],
+  "functions": {
+    "api/generateResponse.js": {
+      "runtime": "nodejs16",
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
 }
