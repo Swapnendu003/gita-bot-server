@@ -1,9 +1,9 @@
-// chatRoutes.js
-const express = require("express");
+// routes/gitaChatRoutes.js
+const express = require('express');
 const router = express.Router();
-const chatController = require("../controllers/gitaController");
+const chatController = require('../controllers/gitaController');
 
-router.post("/generateResponse", async (req, res) => {
+router.post('/generateResponse', async (req, res) => {
   const userInput = req.body.userInput;
 
   // Set headers for chunked response
@@ -21,15 +21,15 @@ router.post("/generateResponse", async (req, res) => {
     async function streamChunks() {
       for (const chunk of responseChunks) {
         res.write(chunk);
-        await new Promise(resolve => setTimeout(resolve, 100)); // Adjust delay as needed
+        await new Promise((resolve) => setTimeout(resolve, 100)); // Adjust delay as needed
       }
       res.end(); // End the response stream after all chunks are sent
     }
 
     streamChunks();
   } catch (error) {
-    console.error("Error generating response:", error);
-    res.status(500).json({ success: false, error: "Internal Server Error" });
+    console.error('Error generating response:', error);
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
   }
 });
 

@@ -270,26 +270,24 @@ async function generateResponse(userInput) {
     const result = await chat.sendMessage(userInput);
     const response = result.response;
 
-    console.log("Complete response:", response);
+    console.log('Complete response:', response);
 
     if (response && response.candidates && Array.isArray(response.candidates)) {
       if (response.candidates.length > 0) {
-        // Access the parts array in the content of the first candidate
         const contentParts = response.candidates[0].content.parts;
-
         const textContent = contentParts.map((part) => part.text).join('\n');
-        console.log("Generated response:", textContent);
+        console.log('Generated response:', textContent);
         return textContent;
       } else {
-        console.error("No candidates in the response");
-        throw new Error("Internal Server Error");
+        console.error('No candidates in the response');
+        throw new Error('Internal Server Error');
       }
     } else {
-      console.error("Unexpected response format:", response);
-      throw new Error("Internal Server Error");
+      console.error('Unexpected response format:', response);
+      throw new Error('Internal Server Error');
     }
   } catch (error) {
-    console.error("Error generating response:", error);
+    console.error('Error generating response:', error);
     throw error;
   }
 }
