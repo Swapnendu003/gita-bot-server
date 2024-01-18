@@ -17,9 +17,8 @@ router.post("/generateResponse", async (req, res) => {
     const chunkSize = 512; // Adjust the chunk size as needed
     const responseChunks = responseText.match(new RegExp(`.{1,${chunkSize}}`, 'g'));
 
-    // Send chunks with a delay
+    // Send chunks without delay
     for (const chunk of responseChunks) {
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulating delay, adjust as needed
       res.write(chunk);
     }
 
