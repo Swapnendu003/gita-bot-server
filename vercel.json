@@ -1,15 +1,17 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      { "src": "/api/sentiment/analyze", "dest": "/index.js" },
-      { "src": "/api/twilio/voicecall", "dest": "/index.js" },
-      { "src": "/(.*)", "dest": "/index.js" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "functions": {
+    "api/generateResponse": {
+      "maxDuration": 30 
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
