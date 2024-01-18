@@ -5,6 +5,12 @@ const {
   HarmBlockThreshold,
 } = require("@google/generative-ai");
 
+const { createParser } = require("eventsource-parser");
+module.exports = {
+  runtime: "edge",
+};
+
+
 const MODEL_NAME = "gemini-pro";
 const API_KEY = "AIzaSyCBksI1GjNWwEyjB5xCGrruywE8NKezYtg"
 
@@ -264,16 +270,15 @@ async function generateResponse(userInput) {
     const result = await chat.sendMessage(userInput);
     const response = result.response;
 
-    console.log("Complete response:", response);  
+    console.log("Complete response:", response);
 
     if (response && response.candidates && Array.isArray(response.candidates)) {
       if (response.candidates.length > 0) {
         // Access the parts array in the content of the first candidate
         const contentParts = response.candidates[0].content.parts;
 
-       
-        const textContent = contentParts.map(part => part.text).join('\n');
-        console.log("Generated response:", textContent);  
+        const textContent = contentParts.map((part) => part.text).join('\n');
+        console.log("Generated response:", textContent);
         return textContent;
       } else {
         console.error("No candidates in the response");
@@ -285,7 +290,7 @@ async function generateResponse(userInput) {
     }
   } catch (error) {
     console.error("Error generating response:", error);
-    throw error;  
+    throw error;
   }
 }
 
