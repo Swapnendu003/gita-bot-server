@@ -7,8 +7,9 @@ router.post("/generateResponse", async (req, res) => {
   const userInput = req.body.userInput;
 
   try {
-    const response = await chatController.generateResponse(userInput);
-    res.json({ success: true, response });
+    const responseText = await chatController.generateResponse(userInput);
+
+    res.json({ success: true, response: responseText });
   } catch (error) {
     console.error("Error generating response:", error);
     res.status(500).json({ success: false, error: "Internal Server Error" });
