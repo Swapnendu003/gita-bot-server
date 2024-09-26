@@ -10,21 +10,23 @@ router.post('/generateResponse', async (req, res) => {
   res.setHeader('Transfer-Encoding', 'chunked');
 
   try {
+    // Call the generateResponse method from the controller and await the response
     const responseText = await chatController.generateResponse(userInput);
 
     // Split the response into chunks
-    const chunkSize = 1024; // Adjust the chunk size as needed
+    const chunkSize = 1024; // Adjust the chunk size if necessary
     const responseChunks = responseText.match(new RegExp(`.{1,${chunkSize}}`, 'g'));
 
     // Stream chunks with a delay
     async function streamChunks() {
       for (const chunk of responseChunks) {
-        res.write(chunk);
-        await new Promise(resolve => setTimeout(resolve, 200)); // Adjust delay as needed
+        res.write(chunk); // Write each chunk
+        await new Promise(resolve => setTimeout(resolve, 200)); // Delay each chunk to simulate streaming
       }
-      res.end(); // End the response stream after all chunks are sent
+      res.end(); // End the response after all chunks are sent
     }
 
+    // Stream the chunks to the client
     streamChunks();
   } catch (error) {
     console.error('Error generating response:', error);
